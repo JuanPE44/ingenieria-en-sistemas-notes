@@ -1,6 +1,4 @@
 
-## Rango de una Matriz
-
 Dada una matriz $A \in \mathbb{R}^{m \times n}$, sus filas pueden considerarse como vectores en $\mathbb{R}^n$ y sus columnas como vectores en $\mathbb{R}^m$.
 
 ### Definición
