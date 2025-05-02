@@ -4,7 +4,7 @@ Las instrucciones de Tipo-R se utilizan principalmente para operaciones **aritm√
 
 **Estructura (32 bits):**
 
-![image.png](media/tipo-r.png)
+![image.png](tipo-r.png)
 
 
 **Descripci√≥n de los Campos:**

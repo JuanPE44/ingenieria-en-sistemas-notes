@@ -1,3 +1,6 @@
+---
+sticker: lucide//alarm-check
+---
 
 Dado un sistema de $n$ ecuaciones lineales con $m$ incógnitas:
 $$

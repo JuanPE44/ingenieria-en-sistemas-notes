@@ -1,3 +1,6 @@
+---
+sticker: lucide//album
+---
 
 Este teorema fundamental proporciona un criterio claro para determinar si un sistema de ecuaciones lineales $A\vec{x} = \vec{b}$ tiene solución, y cuántas, comparando el rango de la matriz de coeficientes $A$ con el rango de la matriz ampliada $(A|\vec{b})$.
 

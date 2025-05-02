@@ -17,7 +17,7 @@ MIPS (Microprocessor without Interlocked Pipeline Stages) es una arquitectura de
 
 Este diseño representa una implementación básica de la arquitectura MIPS de 32 bits donde **cada instrucción se completa en un único ciclo de reloj**. Por eso también se le llama "uniciclo combinacional". Aunque simple, sirve como base para entender diseños más complejos.
 
-![image.png](media/circuito-alto.png)
+![image.png](circuito-alto.png)
 
 ## Instrucciones Soportadas
 

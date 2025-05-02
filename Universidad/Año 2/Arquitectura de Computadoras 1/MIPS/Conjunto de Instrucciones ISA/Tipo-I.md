@@ -4,7 +4,7 @@ Las instrucciones de Tipo-I se utilizan para operaciones que involucran un **val
 
 **Estructura (32 bits):**
 
-![image.png](media/tipo-i.png)
+![image.png](tipo-i.png)
 
 **Descripción de los Campos:**
 

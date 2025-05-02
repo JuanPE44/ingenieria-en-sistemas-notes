@@ -1,3 +1,6 @@
+---
+sticker: lucide//airplay
+---
 
 ## La Idea Central
 El objetivo es transformar un sistema de ecuaciones lineales original, $A\vec{x} = \vec{b}$, en un **sistema equivalente**, $E\vec{x} = \vec{d}$, que tenga **exactamente las mismas soluciones** que el original, pero que sea mucho más **sencillo de resolver** (idealmente, donde la solución sea evidente).

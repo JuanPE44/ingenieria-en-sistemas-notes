@@ -4,7 +4,7 @@ Las instrucciones de Tipo-J se utilizan exclusivamente para **saltos incondicion
 
 **Estructura (32 bits):**
 
-![image.png](media/tipo-j.png)
+![image.png](tipo-j.png)
 
 
 **Descripción de los Campos:**

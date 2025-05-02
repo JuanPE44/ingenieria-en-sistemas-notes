@@ -1,3 +1,7 @@
+---
+sticker: lucide//accessibility
+color: var(--mk-ui-background)
+---
 ## Definición General
 Una ecuación lineal es una igualdad matemática donde las variables (incógnitas) aparecen únicamente con exponente 1 y no se multiplican entre sí.
 

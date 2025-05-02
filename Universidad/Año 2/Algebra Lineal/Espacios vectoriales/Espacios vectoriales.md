@@ -1,3 +1,6 @@
+---
+color:
+---
 ## Operaciones en $\mathbb{R}^2$ (Conceptos Previos a Espacios Vectoriales)
 
 Recordemos el conjunto de vectores en el plano: $\mathbb{R}^2 = \{ (v_1, v_2) \mid v_1, v_2 \in \mathbb{R} \}$.

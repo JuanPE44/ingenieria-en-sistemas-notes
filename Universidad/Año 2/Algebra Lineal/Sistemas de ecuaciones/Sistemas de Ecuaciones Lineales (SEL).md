@@ -1,3 +1,6 @@
+---
+sticker: lucide//alarm-minus
+---
 ## Definición
 Un **sistema de $n$ ecuaciones lineales con $m$ incógnitas** es un conjunto de $n$ ecuaciones lineales que deben satisfacerse simultáneamente. Su forma general es:
 

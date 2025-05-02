@@ -1,3 +1,6 @@
+---
+sticker: lucide//activity
+---
 
 El proceso de escalonamiento transforma una matriz en una forma más simple (forma escalonada o escalonada reducida) mediante operaciones elementales por filas, lo cual es fundamental para resolver sistemas de ecuaciones lineales, calcular rangos, determinantes e inversas.
 

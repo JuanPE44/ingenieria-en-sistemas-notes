@@ -1,3 +1,6 @@
+---
+sticker: lucide//alarm-clock-off
+---
 
 Este método se aplica a sistemas de ecuaciones lineales $A\vec{x} = \vec{b}$ donde el número de ecuaciones es igual al número de incógnitas ($n \times n$), es decir, la matriz de coeficientes $A$ es cuadrada.
 

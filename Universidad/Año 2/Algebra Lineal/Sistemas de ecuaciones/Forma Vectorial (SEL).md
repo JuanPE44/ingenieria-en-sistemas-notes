@@ -1,3 +1,6 @@
+---
+sticker: lucide//air-vent
+---
 Consideremos el sistema lineal en su forma matricial $A\vec{x} = \vec{b}$.
 
 ## Interpretación Clave

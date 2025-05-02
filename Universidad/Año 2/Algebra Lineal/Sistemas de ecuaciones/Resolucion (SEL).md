@@ -1,3 +1,6 @@
+---
+sticker: lucide//alarm-clock
+---
 Existen varios métodos analíticos para encontrar la solución (o determinar que no existe) de un sistema de ecuaciones lineales. Dos métodos fundamentales son:
 
 ## Regla de Cramer

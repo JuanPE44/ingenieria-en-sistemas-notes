@@ -55,7 +55,7 @@ Se pueden calcular menores de orden 1, 2 y 3 (ya que $\min(3, 4) = 3$).
 ### Rango en Términos de Menores
 
 A veces, es más fácil calcular el rango de una matriz en función de sus menores.
-
+z
 **Definición:**
 Se define el **rango** de una matriz $A$, denotado $Rg(A)$, como el orden $k$ del mayor menor no nulo de $A$.
 Formalmente, $Rg(A) = k$ si se cumplen dos condiciones:
