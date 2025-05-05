@@ -1,4 +1,4 @@
-Dadas dos bases $B_1 = \{v_1, \dots, v_n\}$ y $B_2 = \{u_1, \dots, u_n\}$ de un espacio vectorial $V$ de dimensión finita $n$.
+	Dadas dos bases $B_1 = \{v_1, \dots, v_n\}$ y $B_2 = \{u_1, \dots, u_n\}$ de un espacio vectorial $V$ de dimensión finita $n$.
 
 **Objetivo:** Determinar un procedimiento que nos permita conocer las coordenadas de un vector $v$ en la base $B_2$ (la "base de llegada") si conocemos las coordenadas de dicho vector en la base $B_1$ (la "base de partida").
 

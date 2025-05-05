@@ -1,9 +1,3 @@
-### *Indice*
-- [[Base]] 
-- [[Coordenadas]]
-- [[Dimension de un Espacio Vectorial]]
-- [[Matriz Cambio de Base]]
-
 ## Definicion
 
 Un mismo espacio vectorial puede tener muchas bases diferentes. Por ejemplo, en $\mathbb{R}^2$, tanto $B_1 = \{(1, 0), (0, 1)\}$ (la base canónica) como $B_2 = \{(1, 1), (1, -1)\}$ son bases válidas.

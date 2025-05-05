@@ -1,44 +1,3 @@
----
-color:
----
-## Operaciones en $\mathbb{R}^2$ (Conceptos Previos a Espacios Vectoriales)
-
-Recordemos el conjunto de vectores en el plano: $\mathbb{R}^2 = \{ (v_1, v_2) \mid v_1, v_2 \in \mathbb{R} \}$.
-Dados dos vectores $\mathbf{v} = (v_1, v_2)$ y $\mathbf{u} = (u_1, u_2)$ en $\mathbb{R}^2$, y un escalar (número real) $\lambda \in \mathbb{R}$, definimos dos operaciones fundamentales:
-
-### 1. Suma de Vectores
-
-La suma de dos vectores se define componente a componente:
-$$ \mathbf{v} + \mathbf{u} = (v_1, v_2) + (u_1, u_2) = (v_1 + u_1, v_2 + u_2) $$
-El resultado es otro vector en $\mathbb{R}^2$.
-
-### 2. Producto de un Vector por un Escalar
-
-El producto de un escalar por un vector se define multiplicando cada componente del vector por el escalar:
-$$ \lambda \mathbf{v} = \lambda (v_1, v_2) = (\lambda v_1, \lambda v_2) $$
-El resultado es también un vector en $\mathbb{R}^2$.
-
-Con estas dos operaciones, dotamos al conjunto $\mathbb{R}^2$ de una estructura algebraica, que podemos denotar como $\langle \mathbb{R}^2, +_{\mathbb{R}^2}, \cdot_{\mathbb{R}} \rangle$.
-
-### Propiedades de las Operaciones
-
-Estas operaciones cumplen una serie de propiedades importantes:
-
-**Propiedades de la Suma de Vectores** (para $\mathbf{u}, \mathbf{v}, \mathbf{w} \in \mathbb{R}^2$):
-
-*   **S1 (Asociativa):** $\mathbf{u} + (\mathbf{v} + \mathbf{w}) = (\mathbf{u} + \mathbf{v}) + \mathbf{w}$
-*   **S2 (Conmutativa):** $\mathbf{u} + \mathbf{v} = \mathbf{v} + \mathbf{u}$
-*   **S3 (Elemento Neutro):** Existe un vector $\mathbf{0} = (0, 0) \in \mathbb{R}^2$ (el vector nulo) tal que $\mathbf{v} + \mathbf{0} = \mathbf{v}$ para todo $\mathbf{v} \in \mathbb{R}^2$.
-*   **S4 (Inverso Aditivo):** Para cada $\mathbf{v} = (v_1, v_2) \in \mathbb{R}^2$, existe un vector $-\mathbf{v} = (-v_1, -v_2) \in \mathbb{R}^2$ tal que $\mathbf{v} + (-\mathbf{v}) = \mathbf{0}$.
-
-**Propiedades del Producto por un Escalar y Distributivas** (para $\mathbf{u}, \mathbf{v} \in \mathbb{R}^2$ y escalares $\lambda, \beta \in \mathbb{R}$):
-
-*   **P1 (Asociativa escalar):** $(\lambda \beta) \cdot \mathbf{v} = \lambda \cdot (\beta \cdot \mathbf{v})$
-*   **P2 (Neutro multiplicativo escalar):** Existe el escalar $1 \in \mathbb{R}$ tal que $1 \cdot \mathbf{v} = \mathbf{v}$.
-*   **P3 (Distributiva respecto a la suma de escalares):** $(\lambda + \beta) \cdot \mathbf{v} = (\lambda \cdot \mathbf{v}) + (\beta \cdot \mathbf{v})$
-*   **P4 (Distributiva respecto a la suma de vectores):** $\lambda \cdot (\mathbf{u} + \mathbf{v}) = (\lambda \cdot \mathbf{u}) + (\lambda \cdot \mathbf{v})$
-
-Estas 8 propiedades (S1-S4 y P1-P4) son fundamentales y son las que se exigirán para definir la estructura más general de **Espacio Vectorial**.
 
 ## ¿Qué es un Espacio Vectorial?
 
@@ -154,7 +113,7 @@ Estos ejemplos muestran cómo la estructura abstracta de espacio vectorial puede
 
 ## Vector Perteneciente al Subespacio Generado
 
-[[Vector Perteneciente al Subespacio Generado]]
+[[Vector Perteneciente al Sub espacio Generado]]
 
 ## Conjunto de Generadores 
 
