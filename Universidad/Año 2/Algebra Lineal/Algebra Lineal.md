@@ -37,6 +37,13 @@
 	- [[Estructura Conjunto Solucion]]
 	- [[Subespacio Generado]]
 	- [[Subespacios Vectoriales]]
+- [[Suma Directa]]
+	- [[Espacio Fila y Espacio Columna de una Matriz]]
+	- [[Relación de Ortogonalidad de los Subespacios Fundamentales]]
+	- [[Subespacio nulo de una matriz N(A)]]
+	- [[Teorema de la dimension]]
+	- [[Subespacios fundamentales]]
+	
 ## Tareas Pendientes 
 - [x] Hacer resumen Sub espacios
 - [ ] Hacer resumen Suma directa
