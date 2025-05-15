@@ -1,0 +1,1 @@
+El **rango por filas** de A, denotado como $Rg_f(A)$, se define como el número de filas no nulas en cualquier forma escalonada de A.

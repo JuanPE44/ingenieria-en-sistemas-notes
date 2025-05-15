@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"4eeff0dbb2ec9d4f","type":"text","text":"##### CondicionMenor","x":-501,"y":-635,"width":221,"height":50},
+		{"id":"d680cb20e00af9b6","type":"text","text":"##### CondicionCuotaImpaga","x":-845,"y":-645,"width":290,"height":60},
+		{"id":"75631e0eea8ffc27","type":"text","text":"##### Cancha\n- **int** id\n- **int** precio","x":-120,"y":-860,"width":389,"height":300},
+		{"id":"2c1f741cb056e2a1","type":"text","text":"##### CondicionAlquiloCancha","x":-1180,"y":-645,"width":300,"height":60},
+		{"id":"8d9be87796b958a5","type":"text","text":"##### CondicionPrecio","x":-1500,"y":-645,"width":250,"height":60},
+		{"id":"e0c99cf91b650479","type":"text","text":"##### CondicionNOT","x":-1760,"y":-645,"width":250,"height":60},
+		{"id":"2b8c74b0624b4f24","type":"text","text":"##### CondicionOR","x":-2070,"y":-645,"width":250,"height":60},
+		{"id":"59d943b09e676953","type":"text","text":"##### CondicionAND","x":-2360,"y":-645,"width":250,"height":60},
+		{"id":"e6961803d64009e0","type":"text","text":"##### **Abstract** Condicion","x":-1635,"y":-880,"width":250,"height":50},
+		{"id":"a3beb6a38289d794","type":"text","text":"##### SistemaClub\n- **List**<**Socio**> socios\n- **List**<**Cancha**> canchas\n- **List**<**Turno**> historialTurnos\n---\n- **List**<**Socio**> : getSocioImpago()","x":-790,"y":-300,"width":400,"height":460},
+		{"id":"f2f976a7b15a20ef","type":"text","text":"##### Socio \n- **String** nombre\n- **String** apellido\n- **int** edad\n- **boolean** pagoCuota\n- **List**<**Turno**> historialTurnos\n---\n","x":-320,"y":-300,"width":460,"height":460},
+		{"id":"73f2491be74cd5b1","type":"text","text":"##### Turno\n- **int** id\n- **Cancha** cancha\n- **Localdate** fecha\n---\n- **int** : getPrecio()","x":269,"y":-300,"width":340,"height":460}
+	],
+	"edges":[
+		{"id":"4a764b45898f1350","fromNode":"e6961803d64009e0","fromSide":"bottom","toNode":"d680cb20e00af9b6","toSide":"top"},
+		{"id":"990c3306d4ef2e17","fromNode":"e6961803d64009e0","fromSide":"bottom","toNode":"4eeff0dbb2ec9d4f","toSide":"top"},
+		{"id":"9fd2ad040b41749a","fromNode":"e6961803d64009e0","fromSide":"bottom","toNode":"2c1f741cb056e2a1","toSide":"top"},
+		{"id":"7cc64919bd7f908f","fromNode":"e6961803d64009e0","fromSide":"bottom","toNode":"8d9be87796b958a5","toSide":"top"},
+		{"id":"ec9aad80224b8d9b","fromNode":"e6961803d64009e0","fromSide":"bottom","toNode":"e0c99cf91b650479","toSide":"top"},
+		{"id":"8e8a048fb6452df9","fromNode":"e6961803d64009e0","fromSide":"bottom","toNode":"2b8c74b0624b4f24","toSide":"top"},
+		{"id":"a0c3b5e4a3a8d73f","fromNode":"e6961803d64009e0","fromSide":"bottom","toNode":"59d943b09e676953","toSide":"top"}
+	]
+}

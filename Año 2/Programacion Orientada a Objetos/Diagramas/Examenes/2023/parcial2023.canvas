@@ -1,0 +1,30 @@
+{
+	"nodes":[
+		{"id":"a584d133dc2ad096","type":"text","text":"##### PresupuestoUrgente\n- **static** **double** porcentajeCosto\n---\n@override\n- **int** : getTiempo()\n- **double** : getCostos()\n- **List**<**Material**> : getMateriales()\n- **int** : getAfectados()","x":8,"y":-475,"width":450,"height":360},
+		{"id":"9a32da62a2da8baa","type":"text","text":"##### PresupuestoComplejo\n- **List**<**Componente**> componentes\n---\n- **void** addElemento(**Componente** elemento)\n\n@override\n- **List**<**Material**> getMateriales()\n- **int** getEmpleadosAfectados()\n- **int** getTiempo()\n- **double** getCosto()\n- **Componete**:  getCopia()","x":-40,"y":-1120,"width":705,"height":540},
+		{"id":"168c1275e86a331e","type":"text","text":"##### PresupuestoBasico\n- **List**<**Materiales**> materiales\n- **double** costo\n- **int** empleadosAfectados\n- **int** tiempoEstimado\n---\n@override\n- **List**<**Material**> getMateriales()\n- **int** getEmpleadosAfectados()\n- **int** getTiempo()\n- **double** getCosto()\n- **Componete**:  getCopia()\n","x":-720,"y":-1120,"width":525,"height":520},
+		{"id":"a9d30ebb1cb26341","type":"text","text":"##### PresupuestoAcotado **extends** PresupuestoComplejo\n- **Condicion** politica\n---\n@override\n- **void** addElemento(**Componente** elemento)\n","x":1060,"y":-720,"width":705,"height":540},
+		{"id":"133b7d28e868f1fe","type":"text","text":"##### Condicion\n---\n- **abstract** **boolean** cumple(**Tarea** tarea)","x":-1770,"y":-1520,"width":360,"height":180},
+		{"id":"1148952f5d793482","x":-2240,"y":-1286,"width":370,"height":270,"type":"text","text":"##### CondicionTiempo\n- **int** tiempo\n---\n- **boolean** : cumple(**Tarea** taerea)\n"},
+		{"id":"358f07992dba8992","type":"text","text":"##### CondicionAND","x":-2140,"y":-780,"width":370,"height":270},
+		{"id":"a59e3a2767df2c27","type":"text","text":"##### CondicionNOT","x":-1870,"y":-350,"width":370,"height":270},
+		{"id":"4600e6ffec390fb2","type":"text","text":"##### CondicionMaterial\n- **List**<**String**> materiales\n---\n- **boolean** : cumple(**Tarea** taerea)\n\n","x":-1160,"y":-1401,"width":370,"height":250},
+		{"id":"bd83b6312c8d155c","type":"text","text":"##### CondicionEmpleados\n- **int** empleadosAfectados\n---\n- **boolean** : cumple(**Tarea** taerea)\n","x":-1280,"y":-995,"width":370,"height":270},
+		{"id":"4835bb6855b00c46","type":"text","text":"##### CondicionOR","x":-1465,"y":-600,"width":370,"height":270},
+		{"id":"ffd89091c9ad0b9a","type":"text","text":"##### **abstract** Presupuesto\n- **String** nombre\n---\n- **abstract** **List**<**Material**> : getMateriales()\n- **abstract** **int** : getEmpleadosAfectados()\n- **abstract** **int** : getTiempo()\n- **abstract** **double** : getCosto()\n- **abstract** **Componete**:  getCopia()","x":-360,"y":-1960,"width":515,"height":560},
+		{"id":"e2ea2d00d7aa585b","type":"text","text":"##### PresupuestoEspecial\n\n- **List**<**String**> especialidades","x":-720,"y":-475,"width":513,"height":430}
+	],
+	"edges":[
+		{"id":"ab6fd511cc507e18","fromNode":"168c1275e86a331e","fromSide":"top","toNode":"ffd89091c9ad0b9a","toSide":"bottom"},
+		{"id":"a55b6cc33ea51715","fromNode":"9a32da62a2da8baa","fromSide":"top","toNode":"ffd89091c9ad0b9a","toSide":"bottom"},
+		{"id":"ba59b23eb05e70a8","fromNode":"e2ea2d00d7aa585b","fromSide":"top","toNode":"168c1275e86a331e","toSide":"bottom"},
+		{"id":"3de3267a0efadcb1","fromNode":"a584d133dc2ad096","fromSide":"top","toNode":"9a32da62a2da8baa","toSide":"bottom"},
+		{"id":"b0992df4a621a07d","fromNode":"4600e6ffec390fb2","fromSide":"top","toNode":"133b7d28e868f1fe","toSide":"bottom"},
+		{"id":"4cd6f003bffcae76","fromNode":"1148952f5d793482","fromSide":"top","toNode":"133b7d28e868f1fe","toSide":"bottom"},
+		{"id":"0bd8b14932b896bd","fromNode":"bd83b6312c8d155c","fromSide":"top","toNode":"133b7d28e868f1fe","toSide":"bottom"},
+		{"id":"94a8bcfba7f7989f","fromNode":"358f07992dba8992","fromSide":"top","toNode":"133b7d28e868f1fe","toSide":"bottom"},
+		{"id":"382dc662732f49ab","fromNode":"a59e3a2767df2c27","fromSide":"top","toNode":"133b7d28e868f1fe","toSide":"bottom"},
+		{"id":"1585b884d3ca913d","fromNode":"4835bb6855b00c46","fromSide":"top","toNode":"133b7d28e868f1fe","toSide":"bottom"},
+		{"id":"73b4d72ee77e1a23","fromNode":"a9d30ebb1cb26341","fromSide":"top","toNode":"9a32da62a2da8baa","toSide":"right"}
+	]
+}

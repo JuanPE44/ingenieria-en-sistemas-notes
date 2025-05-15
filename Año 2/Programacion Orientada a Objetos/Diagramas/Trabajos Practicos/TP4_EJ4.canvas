@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"05bcccf42b839a3e","type":"text","text":"##### Cultivo\n- **String** nombre\n- **List** <**Enfermedad**> enfermedades\n---\n-  **boolean** : puedeTratar(**Agroquimico** agroquimico)","x":100,"y":-440,"width":566,"height":251},
+		{"id":"b11d8b38e31b111a","type":"text","text":"##### Sistema\n- **List **<**Agroquimico**> agroquimicos\n---\n- **List**<**Agroquimico**> : puedenCurar(**Enfermedad** enfermedad)\n- **List**<**Agroquimico**> : puedenTratar(**Cultivo** cultivo, **Enfermedad** enfermedad)","x":100,"y":-761,"width":580,"height":288},
+		{"id":"ee56b20d122626f6","type":"text","text":"#####  Agroquimico\n- **String** nombre\n- **List** <**Cultivo**> cultivosProhibidos\n- **List** <**String**> estadosPatologicos\n- **List** <**String**> puedeTratar","x":-320,"y":-500,"width":380,"height":270},
+		{"id":"634e56ca0c7be119","type":"text","text":"##### Enfermedad\n- **String** Nombre\n- **List** <**String**> estadosPatologicos","x":-286,"y":-740,"width":346,"height":147}
+	],
+	"edges":[]
+}

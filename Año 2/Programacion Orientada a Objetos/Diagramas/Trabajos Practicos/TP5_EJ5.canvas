@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"146d8cd65b95628f","type":"text","text":"##### CondicionMaxDuracion **extends** Condicion\n- **int** duracion\n---\n@override\n- **boolean** : cumple(**Pelicula** pelicula)","x":140,"y":-380,"width":337,"height":300},
+		{"id":"d21455b5d4f14822","type":"text","text":"##### CondicionNOT **extends** Condicion\n---\n@override\n- **boolean** : cumple(**Pelicula** pelicula)","x":-1328,"y":-760,"width":337,"height":300},
+		{"id":"d76ac47b5b39b277","type":"text","text":"##### CondicionActor **extends** Condicion\n- **String** nombreAutor\n---\n@override\n- **boolean** : cumple(**Pelicula** pelicula)","x":-263,"y":-460,"width":337,"height":300},
+		{"id":"ae903762abaff4f0","type":"text","text":"##### CondicionGenero **extends** Condicion\n- **String** genero\n---\n@override\n- **boolean** : cumple(**Pelicula** pelicula)","x":-663,"y":-530,"width":337,"height":300},
+		{"id":"dad5774b8f7877af","type":"text","text":"##### CondicionPalabra **extends** Condicion\n- **String** palabra\n---\n@override\n- **boolean** : cumple(**Pelicula** pelicula)","x":-1040,"y":-460,"width":337,"height":300},
+		{"id":"69c736d435fe3e43","type":"text","text":"##### CondicionOR **extends** Condicion\n- **Condicion**  c1\n- **Condicion**  c2\n---\n@override\n- **boolean** : cumple(**Pelicula** pelicula)","x":-1000,"y":-1400,"width":337,"height":300},
+		{"id":"ac559508f78291c1","type":"text","text":"##### CondicionAND **extends** Condicion\n- **Condicion**  c1\n- **Condicion**  c2\n---\n@override\n- **boolean** : cumple(**Pelicula** pelicula)","x":-1400,"y":-1140,"width":337,"height":300},
+		{"id":"7514240f865b1b25","type":"text","text":"##### CondicionAntesFecha **extends** Condicion\n- **LocalDate** fecha\n---\n@override\n- **boolean** : cumple(**Pelicula** pelicula)","x":477,"y":-830,"width":337,"height":300},
+		{"id":"895b80a9f85265be","type":"text","text":"##### **abstract** Condicion\n---\n- **abstract boolean** : cumple(**Pelicula** pelicula)","x":-394,"y":-1070,"width":300,"height":240},
+		{"id":"9edadcfa8142b9e6","type":"text","text":"##### Streaming\n- **List**<**Pelicula**> peliculas\n---\n- **List**<**Pelicula**> getPeliculas(**Condicion** condicion)","x":-831,"y":-1920,"width":474,"height":244},
+		{"id":"8fb1c8437ee40e80","type":"text","text":"##### Pelicula\n- **String** titulo\n- **String** sinopsis\n- **List**<**String**> generos\n- **List**<**String**> actores\n- **String** director\n- **LocalDate** estreno\n- **int** duracion\n- **int** edadMinima","x":261,"y":-1983,"width":385,"height":370}
+	],
+	"edges":[
+		{"id":"02192e031869fa46","fromNode":"895b80a9f85265be","fromSide":"bottom","toNode":"dad5774b8f7877af","toSide":"top"},
+		{"id":"ca2b1198b64efa63","fromNode":"895b80a9f85265be","fromSide":"bottom","toNode":"ae903762abaff4f0","toSide":"top"},
+		{"id":"d2b6343bc239571e","fromNode":"895b80a9f85265be","fromSide":"bottom","toNode":"d21455b5d4f14822","toSide":"right"},
+		{"id":"c1eb7d46e8b706d1","fromNode":"895b80a9f85265be","fromSide":"bottom","toNode":"d76ac47b5b39b277","toSide":"top"},
+		{"id":"3ec8d8f2513c2d3f","fromNode":"895b80a9f85265be","fromSide":"bottom","toNode":"7514240f865b1b25","toSide":"left"},
+		{"id":"9e51347a75f94f84","fromNode":"895b80a9f85265be","fromSide":"bottom","toNode":"146d8cd65b95628f","toSide":"top"},
+		{"id":"25ae144688d38b1c","fromNode":"895b80a9f85265be","fromSide":"bottom","toNode":"69c736d435fe3e43","toSide":"right"},
+		{"id":"d52cb3f1c9a36b5d","fromNode":"895b80a9f85265be","fromSide":"bottom","toNode":"ac559508f78291c1","toSide":"right"}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"nodes":[
+		{"id":"205d02a610560278","type":"text","text":"##### Imagen **extends** Contenido\n- **String** descripcion\n---\n@override\n- **String** getTexto()\n\n@override\n- **boolean** containsPalabra(**String** palabra)","x":1120,"y":140,"width":320,"height":400},
+		{"id":"0ad5358fdd7e29a1","type":"text","text":"##### Video **extends** Contenido\n- **String** titulo\n---\n@override\n- **String** getTexto()\n\n@override\n- **boolean** containsPalabra(**String** palabra)","x":1480,"y":140,"width":440,"height":360},
+		{"id":"5d3d83ace63650a4","type":"text","text":"##### Texto **extends** Contenido\n---\n@override\n- **String** getTexto()\n\n@override\n- **boolean** containsPalabra(**String** palabra)","x":1960,"y":140,"width":329,"height":320},
+		{"id":"8c15cf8916b868ee","type":"text","text":"##### Usuario\n- **List**<**String**> preferencias\n- **List**<**Noticia**> noticiaRecomendada","x":1860,"y":-700,"width":356,"height":320},
+		{"id":"5c73c75cb96986ea","type":"text","text":"##### **abstract** Contenido\n---\n- **abstract String** getTexto()\n- **int** contarPalabrasTexto()","x":1620,"y":-280,"width":415,"height":200},
+		{"id":"e1fd6ded69a902a0","type":"text","text":"##### Servidor Noticias\n- **List**<**Noticia**> noticias \n--- \n- **List**<**Noticia**> : getNoticiasTitulo(**String** titulo)\n- **List**<**Noticia**> : getNoticiasClasificacion(**String** clasificacion)\n- **List**<**Noticia**> : getNoticiasPalabra(**String** palabra)\n- **List**<**Noticia**> : getNoticiasPalabras(**List**<**String**> palabras)\n- **List**<**Noticia**> : getNoticiasMaxPalabra(**int** maximo)\n**List**<**Noticia**> : getNoticias(**String** clasificacion, **List**<**String**> palabras, **int** maximo)","x":1120,"y":-700,"width":700,"height":380},
+		{"id":"774f106e6db7f74f","type":"text","text":"##### CondicionMaxPalabra","x":-560,"y":-1320,"width":321,"height":60},
+		{"id":"0d269f37db13e7cb","type":"text","text":"##### CondicionClasificacion","x":-200,"y":-1320,"width":289,"height":60},
+		{"id":"424c07b6c7ba5397","type":"text","text":"##### CondicionNot","x":116,"y":-1320,"width":250,"height":60},
+		{"id":"40bf115460aab826","type":"text","text":"##### CondicionOR","x":405,"y":-1320,"width":250,"height":60},
+		{"id":"724cd9a9af49e1cc","type":"text","text":"##### **Abstract** Condicion\n---\n- **boolean** cumple(**Noticia** noticia)","x":530,"y":-1680,"width":364,"height":140},
+		{"id":"31701364ff72a95f","type":"text","text":"##### CondicionAND","x":674,"y":-1320,"width":250,"height":60},
+		{"id":"b094c85b85b1abe7","type":"text","text":"##### CondicionTitulo","x":960,"y":-1320,"width":250,"height":60},
+		{"id":"f4749dba906dad7d","type":"text","text":"##### CondicionPalabra","x":1230,"y":-1320,"width":250,"height":60},
+		{"id":"ae528951addf8368","type":"text","text":"##### CondicionPalabras","x":1520,"y":-1320,"width":250,"height":60},
+		{"id":"73cde1cf2aa1881e","type":"text","text":"##### Noticia\n- **String** titulo\n- **String** clasificacion\n- **List**<**Contenido**> cuerpo\n---\n\n\n","x":560,"y":-320,"width":460,"height":380}
+	],
+	"edges":[
+		{"id":"1be8327a511875fa","fromNode":"5c73c75cb96986ea","fromSide":"bottom","toNode":"5d3d83ace63650a4","toSide":"top"},
+		{"id":"f4b72f3c863748b7","fromNode":"5c73c75cb96986ea","fromSide":"bottom","toNode":"205d02a610560278","toSide":"top"},
+		{"id":"75163bb5bb0a1980","fromNode":"5c73c75cb96986ea","fromSide":"bottom","toNode":"0ad5358fdd7e29a1","toSide":"top"},
+		{"id":"fe35a5838edcda03","fromNode":"724cd9a9af49e1cc","fromSide":"bottom","toNode":"31701364ff72a95f","toSide":"top"},
+		{"id":"6912ac83fae2b199","fromNode":"724cd9a9af49e1cc","fromSide":"bottom","toNode":"40bf115460aab826","toSide":"top"},
+		{"id":"96e2c2e8a0ad5d98","fromNode":"724cd9a9af49e1cc","fromSide":"bottom","toNode":"424c07b6c7ba5397","toSide":"top"},
+		{"id":"ab860049e03b2976","fromNode":"724cd9a9af49e1cc","fromSide":"bottom","toNode":"0d269f37db13e7cb","toSide":"top"},
+		{"id":"962002c1cf523674","fromNode":"724cd9a9af49e1cc","fromSide":"bottom","toNode":"774f106e6db7f74f","toSide":"top"},
+		{"id":"85e71ad1950d2787","fromNode":"724cd9a9af49e1cc","fromSide":"bottom","toNode":"b094c85b85b1abe7","toSide":"top"},
+		{"id":"d4ee347e3e60d52a","fromNode":"724cd9a9af49e1cc","fromSide":"bottom","toNode":"f4749dba906dad7d","toSide":"top"},
+		{"id":"9350aad967094cf5","fromNode":"724cd9a9af49e1cc","fromSide":"bottom","toNode":"ae528951addf8368","toSide":"top"}
+	]
+}

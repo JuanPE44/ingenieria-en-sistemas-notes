@@ -1,0 +1,23 @@
+{
+	"nodes":[
+		{"id":"adf145c56e6e1b71","type":"text","text":"##### FichaEspecial **extends** Ficha\n\n---\n@override\n- **int** : getFortaelza()","x":420,"y":140,"width":378,"height":310},
+		{"id":"0927383ad131e629","type":"text","text":"##### Ficha\n- **String** nombre\n- **int** fortaleza\n- **int** espacioCasillas\n- **int** poderDestruccion\n---\n- **int** : getFortaelza()","x":420,"y":-300,"width":378,"height":310},
+		{"id":"81221a5cfb92f200","type":"text","text":"##### Tablero\n- **List**<**Ficha**> fichas\n- **int** puntajeMinimo\n- **int** dificultad\n---\n- **int** : calcularDificultad()\n- **List**<**Ficha**> getFichasPorDificultad(**int** poderDestruccion)\n- **List**<**Ficha**>  getFichasPorEspacio(**int** espacioCasillas)\n- **List**<**Ficha**> getFichasPorFortaleza(**int** fortaleza)\n- **List**<**Ficha**> getFichas(**int** poderDestruccion, **int** espacioCasillas, **int** fortaleza)","x":-200,"y":-242,"width":520,"height":505},
+		{"id":"ce56c797b9ed1041","type":"text","text":"##### CondicionNOT","x":240,"y":-460,"width":250,"height":60},
+		{"id":"d1ee7077f6b12d07","type":"text","text":"##### CondicionAND","x":540,"y":-460,"width":250,"height":60},
+		{"id":"143da230fc7a7066","type":"text","text":"##### CondicionMinLugar","x":-325,"y":-460,"width":250,"height":60},
+		{"id":"e6d3e98a88512cd6","type":"text","text":"##### CondicionMinPoder","x":100,"y":-360,"width":250,"height":60},
+		{"id":"1145c83fdc8e7c55","type":"text","text":"#####  **abstract** Condicion","x":-130,"y":-700,"width":340,"height":60},
+		{"id":"32d5e0da0d22890c","type":"text","text":"##### CondicionMinFortaleza","x":-215,"y":-360,"width":281,"height":60},
+		{"id":"f3f557d04d1cfe41","type":"text","text":"##### CondicionOR","x":290,"y":-640,"width":250,"height":50}
+	],
+	"edges":[
+		{"id":"33c4a193a7aaa679","fromNode":"0927383ad131e629","fromSide":"bottom","toNode":"adf145c56e6e1b71","toSide":"top"},
+		{"id":"43ec2f7419e7e65a","fromNode":"1145c83fdc8e7c55","fromSide":"bottom","toNode":"f3f557d04d1cfe41","toSide":"top"},
+		{"id":"f1117fcc0fda7ba4","fromNode":"1145c83fdc8e7c55","fromSide":"bottom","toNode":"ce56c797b9ed1041","toSide":"top"},
+		{"id":"fc717532041433b8","fromNode":"1145c83fdc8e7c55","fromSide":"bottom","toNode":"d1ee7077f6b12d07","toSide":"top"},
+		{"id":"c13b664ce1af8b14","fromNode":"1145c83fdc8e7c55","fromSide":"bottom","toNode":"e6d3e98a88512cd6","toSide":"top"},
+		{"id":"f8486ea54a238c09","fromNode":"1145c83fdc8e7c55","fromSide":"bottom","toNode":"143da230fc7a7066","toSide":"top"},
+		{"id":"5ea3c35ea726a327","fromNode":"1145c83fdc8e7c55","fromSide":"bottom","toNode":"32d5e0da0d22890c","toSide":"top"}
+	]
+}

@@ -1,0 +1,8 @@
+{
+	"nodes":[
+		{"id":"004f87e5e0d87614","type":"text","text":"##### Computadora\n- **int** id\n- **int** velocidad","x":65,"y":-70,"width":250,"height":170},
+		{"id":"64a9e720faf188b4","type":"text","text":"##### Centro Computo\n- procesosEspera\n- compusDisponibles\n--- \n-  asignarProceso()","x":-160,"y":-500,"width":300,"height":260,"color":"5"},
+		{"id":"a221a05c4dbda861","type":"text","text":"##### Proceso\n- **int** id\n- **double** requrimientoMemoria","x":-360,"y":-70,"width":320,"height":160,"color":"1"}
+	],
+	"edges":[]
+}

@@ -1,0 +1,29 @@
+{
+	"nodes":[
+		{"id":"09104ef5a3006dea","type":"text","text":"##### Articulo **extends** ColeccionMuseo\n- **String** nombre\n- **String** descripcion\n- **double** peso\n- **double** precio\n---\n@override\n- **double** : getPrecio()\n- **int** : cantidadArticulos()\n- **this** : getArticuloMayorValor()\n- **ColeccionMuseo** : getCopia(**Condicion** condicion)\n---\n- **this** : getDescripcion()","x":723,"y":-420,"width":677,"height":580},
+		{"id":"3ac095b838950ade","type":"text","text":"##### CondicionMinPeso **extends** Condicion\n- **double** peso\n---\n@override\n- **boolean** : cumple(**Articulo** articulo)","x":-79,"y":-1358,"width":337,"height":300},
+		{"id":"d63489c45820a624","type":"text","text":"##### CondicionMinPrecio **extends** Condicion\n- **double** precio\n---\n@override\n- **boolean** : cumple(**Articulo** articulo)","x":-479,"y":-1428,"width":337,"height":370},
+		{"id":"92d6917aa17751d6","type":"text","text":"##### CondicionDescripcion **extends** Condicion\n- **String** descripcion\n---\n@override\n- **boolean** : cumple(**Articulo** articulo)","x":-856,"y":-1358,"width":336,"height":378},
+		{"id":"3250f401a8aa084f","type":"text","text":"##### CondicionOR **extends** Condicion\n- **Condicion**  c1\n- **Condicion**  c2\n---\n@override\n- **boolean** : cumple(**Articulo** articulo)","x":-816,"y":-2298,"width":337,"height":330},
+		{"id":"84d44b7ef33cb63e","type":"text","text":"##### CondicionAND **extends** Condicion\n- **Condicion**  c1\n- **Condicion**  c2\n---\n@override\n- **boolean** : cumple(**Articulo** articulo)","x":-1240,"y":-2118,"width":337,"height":358},
+		{"id":"f2300f7215acc499","type":"text","text":"##### CondicionNOT **extends** Condicion\n---\n@override\n- **boolean** : cumple(**Articulo** articulo)","x":-1260,"y":-1658,"width":337,"height":300},
+		{"id":"1b68a552a21ee06d","type":"text","text":"##### **abstract** ColeccionMuseo\n- **String** nombre\n---\n- *abstract* **double** : getPrecio()\n- *abstract* **int** : cantidadArticulos()\n- *abstract* **Articulo** : articuloMayorValor()\n- *abstract* **ColeccionMuseo** : getCopia(**Condicion** condicion)\n---\n- **String** : getNombre()\n","x":400,"y":-1140,"width":560,"height":540},
+		{"id":"a19b03eb4197bcc5","type":"text","text":"##### ColeccionPrivada **extends** ColeccionMuseo\n---\n@override\n- **ColeccionMuseo** : getCopia()\n","x":140,"y":380,"width":420,"height":220},
+		{"id":"211108cb8a10c323","type":"text","text":"##### Coleccion **extends** ColeccionMuseo\n- **String** nombre\n- **List**<**ColeccionMuseo**> colecciones\n- **double** porcentajeArticuloExtra\n- *static* **double** tope = 75\n\n---\n@override\n- **double** : getPrecio()\n- **int** : cantidadArticulos()\n- **Articulo** : getArticuloMayorValor()\n- **ColeccionMuseo** : getCopia(**Condicion** condicion)\n---\n- **int** : getPorcentaje()\n- *static* **int** getTope()\n","x":100,"y":-420,"width":500,"height":600},
+		{"id":"d611074f49d878b3","type":"text","text":"##### Sistema\n- **List**<**ColeccionMuseo**> coleccionesTematicas\n---\n**List**<**Articulo**> :  getArticulo(**Condicion** condicon)","x":-300,"y":-870,"width":460,"height":200},
+		{"id":"ea5800519dae2c8e","type":"text","text":"##### **abstract** Condicion\n---\n- **abstract boolean** : cumple(**Articulo** articulo)","x":-142,"y":-2000,"width":300,"height":240},
+		{"id":"6ead5ebea082082b","type":"text","text":"##### ArticuloEspecial **extends** Articulo\n- **int** unidades\n- **Condicion** control\n---\n@override\n- **double** : getPrecio()","x":1220,"y":680,"width":677,"height":440}
+	],
+	"edges":[
+		{"id":"da294a5cd1bfab7a","fromNode":"6ead5ebea082082b","fromSide":"top","toNode":"09104ef5a3006dea","toSide":"bottom"},
+		{"id":"3b2cadc338b66251","fromNode":"a19b03eb4197bcc5","fromSide":"top","toNode":"211108cb8a10c323","toSide":"bottom"},
+		{"id":"8640afd842415750","fromNode":"211108cb8a10c323","fromSide":"top","toNode":"1b68a552a21ee06d","toSide":"bottom"},
+		{"id":"0efd6fab31dd9d1a","fromNode":"09104ef5a3006dea","fromSide":"top","toNode":"1b68a552a21ee06d","toSide":"bottom"},
+		{"id":"32056cf1047f52ec","fromNode":"3ac095b838950ade","fromSide":"top","toNode":"ea5800519dae2c8e","toSide":"bottom"},
+		{"id":"1bb9c5dd33fac3b5","fromNode":"d63489c45820a624","fromSide":"top","toNode":"ea5800519dae2c8e","toSide":"bottom"},
+		{"id":"63daa60268c6f70b","fromNode":"92d6917aa17751d6","fromSide":"top","toNode":"ea5800519dae2c8e","toSide":"bottom"},
+		{"id":"6e81922fdaea9624","fromNode":"f2300f7215acc499","fromSide":"right","toNode":"ea5800519dae2c8e","toSide":"bottom"},
+		{"id":"538856155da9c61d","fromNode":"84d44b7ef33cb63e","fromSide":"right","toNode":"ea5800519dae2c8e","toSide":"bottom"},
+		{"id":"a093434023342345","fromNode":"3250f401a8aa084f","fromSide":"right","toNode":"ea5800519dae2c8e","toSide":"bottom"}
+	]
+}

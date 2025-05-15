@@ -1,0 +1,33 @@
+{
+	"nodes":[
+		{"id":"52c4aaf867e7943a","type":"text","text":"# **abstract** ElementoAlquilado\n- **abstract** **double** : getValor()\n- **abstract** **int** : getAntiguedad()\n- **abstract** **int** : getId()\n- **abstract** **List**<**ElementoAlquilado**> getElementos(Condicion condicion)\n- **abstract** **double** getCosto()","x":-440,"y":-740,"width":400,"height":260},
+		{"id":"4ceec36bc97175a4","type":"text","text":"# CombosArmados **extends** ElementoAlquilado\n- **List**<**ElementoAlquilado**> elementos\n---\n@Override\n-  **double** : getValor()\n- **int** : getAntiguedad()\n- **int** : getId()\n- **List**<**ElementoAlquiladp**> : getElementos(Condicion condicion)\n- **double** : getCosto()\n","x":-297,"y":-340,"width":325,"height":560},
+		{"id":"b5c2e6fae4c5eaa7","type":"text","text":"# Computadora **extends** ElementoAlquilado\n- **int** id\n- **double** valor\n- **int** antiguedad\n- **String** descripcion\n- **CalcularAlquiler** calculador\n---\n- **String** : getDescripcion()\n---\n@Override\n-  **double** : getValor()\n- **int** : getAntiguedad()\n- **int** : getId()\n- **List**<**ElementoAlquiladp**> : getElementos(Condicion condicion)\n- **double** : getCosto()\n","x":-820,"y":-340,"width":445,"height":620},
+		{"id":"849c9dfbabc61b35","type":"text","text":"#  CondicionDescripcion **extends** Condicion\n- **String** descripcion\n---\n-  **boolean** cumple(**ElementoAlquilado** elemento)","x":-458,"y":-1101,"width":350,"height":320},
+		{"id":"7284421dc37f1037","type":"text","text":"#  CondicionAntiguedad **extends** Condicion\n- **int** antiguedad\n---\n-  **boolean** cumple(**ElementoAlquilado** elemento)","x":-900,"y":-1101,"width":350,"height":320},
+		{"id":"6a8195b4a8d8be2c","type":"text","text":"#  CondicionId **extends** Condicion\n- **int** id\n---\n-  **boolean** cumple(**ElementoAlquilado** elemento)","x":-340,"y":-1500,"width":350,"height":320},
+		{"id":"250a198240ac69c0","type":"text","text":"#  CondicionNOT **extends** Condicion\n- **Condicion** c1\n---\n-  **boolean** cumple(**ElementoAlquilado** elemento)","x":-1460,"y":-1280,"width":350,"height":320},
+		{"id":"ad08aee5d7dbce07","type":"text","text":"#  CondicionOR **extends** Condicion\n- **Condicion** c1\n- **Condicion** c2\n---\n-  **boolean** cumple(**ElementoAlquilado** elemento)","x":-1250,"y":-1760,"width":350,"height":320},
+		{"id":"ec1b5b3fe5a7e9f6","type":"text","text":"#  CondicionAND **extends** Condicion\n- **Condicion** c1\n- **Condicion** c2\n---\n-  **boolean** cumple(**ElementoAlquilado** elemento)","x":-1425,"y":-910,"width":350,"height":320},
+		{"id":"a8951c0e84f82af5","type":"text","text":"# **asbtract** Condicion\n- **abstract** **boolean** cumple(**ElementoAlquilado** elemento)","x":-725,"y":-1760,"width":350,"height":200},
+		{"id":"cb11017ce643205e","type":"text","text":"# ElementoConObsolescencia **extends** ElementoAlquilado\n- **ElementoAlquilado** elemento\n- **int** mesesObsolescencia\n- **double** porcentaje\n---\n@Override\n-  **double** : getValor()\n- **int** : getAntiguedad()\n- **int** : getId()\n- **List**<**ElementoAlquiladp**> getElementos(Condicion condicion)\n- **double** : getCosto()","x":180,"y":-680,"width":325,"height":540,"color":"1"},
+		{"id":"6228781abcdaa35e","type":"text","text":"# CostoFijo **extends** calcularAlquiler\n- **double** costoFijo\n- **double** calcular(**ElementoAlquilado** elemento)","x":-980,"y":730,"width":420,"height":180},
+		{"id":"cb22ef8806619101","type":"text","text":"# CostoPorcentaje **extends** calcularAlquiler\n- **double** porcentaje\n- **double** calcular(**ElementoAlquilado** elemento)","x":-507,"y":820,"width":420,"height":180},
+		{"id":"a308e5666f44c2b4","type":"text","text":"# CostoSeguro **extends** calcularAlquiler\n- **double** costoFijo\n- **double** porcentaje\n- **double** calcular(**ElementoAlquilado** elemento)","x":-60,"y":680,"width":420,"height":180,"color":"1"},
+		{"id":"d06c2cf48057b5ea","x":-480,"y":440,"width":420,"height":180,"type":"text","text":"# **abstract** calcularAlquiler\n- **abstract** **double** calcularCosto(**ElementoAlquilado** elemento)"}
+	],
+	"edges":[
+		{"id":"52e37d466d47ecfb","fromNode":"b5c2e6fae4c5eaa7","fromSide":"top","toNode":"52c4aaf867e7943a","toSide":"bottom"},
+		{"id":"ea7646077b067b04","fromNode":"4ceec36bc97175a4","fromSide":"top","toNode":"52c4aaf867e7943a","toSide":"bottom"},
+		{"id":"660c25e2384707ab","fromNode":"cb11017ce643205e","fromSide":"left","toNode":"52c4aaf867e7943a","toSide":"bottom"},
+		{"id":"8c767db275149329","fromNode":"7284421dc37f1037","fromSide":"top","toNode":"a8951c0e84f82af5","toSide":"bottom"},
+		{"id":"3bd8549f48698426","fromNode":"250a198240ac69c0","fromSide":"top","toNode":"a8951c0e84f82af5","toSide":"bottom"},
+		{"id":"ce310d0cd49527a8","fromNode":"ec1b5b3fe5a7e9f6","fromSide":"top","toNode":"a8951c0e84f82af5","toSide":"bottom"},
+		{"id":"8a3b8fd029e33f36","fromNode":"849c9dfbabc61b35","fromSide":"top","toNode":"a8951c0e84f82af5","toSide":"bottom"},
+		{"id":"f7d8962db7d76463","fromNode":"6a8195b4a8d8be2c","fromSide":"bottom","toNode":"a8951c0e84f82af5","toSide":"bottom"},
+		{"id":"7fbfce9242f7ad53","fromNode":"ad08aee5d7dbce07","fromSide":"bottom","toNode":"a8951c0e84f82af5","toSide":"bottom"},
+		{"id":"bb03e0ed1f093ed9","fromNode":"6228781abcdaa35e","fromSide":"top","toNode":"d06c2cf48057b5ea","toSide":"bottom"},
+		{"id":"0ba6a7557c7ad950","fromNode":"cb22ef8806619101","fromSide":"top","toNode":"d06c2cf48057b5ea","toSide":"bottom"},
+		{"id":"3b23792b48be7819","fromNode":"a308e5666f44c2b4","fromSide":"top","toNode":"d06c2cf48057b5ea","toSide":"bottom"}
+	]
+}

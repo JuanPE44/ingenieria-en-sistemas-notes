@@ -1,0 +1,12 @@
+{
+	"nodes":[
+		{"id":"ad6339d66bc984e8","type":"text","text":"##### Factura\n- **List**<**Producto**> productosComprados\n- **int** descuento\n- **LocalDate** fecha\n---\n- **int** : getMontoTotal()\n- **int** : getTotalUnidadeProductoComprado()","x":-125,"y":-30,"width":465,"height":330},
+		{"id":"571f05e1b7604369","type":"text","text":"##### ProductoImpuesto *extends* Producto\n- **List**<**Impuesto**> impuestos\n---\n@override\n- **double** : getPrecio()","x":-460,"y":440,"width":395,"height":300},
+		{"id":"08a03eb3658e1ad5","type":"text","text":"##### Producto\n- **double** precio\n- **int** cant\n- **int** minCant\n- **String** nombre\n---\n- **double** : getPrecio()","x":-520,"y":0,"width":320,"height":300},
+		{"id":"c79dbce3e7efac54","type":"text","text":"#####  Impuesto\n- **String** nombre\n- **int** porcentaje\n- **double** sumaDinero\n---\n- **double** : getImpuesto(**double** precio)","x":-1000,"y":440,"width":480,"height":300},
+		{"id":"269e5307ca1f4974","x":-1220,"y":-115,"width":640,"height":500,"type":"text","text":"##### Sistema mercado\n- **List**<**Producto**> stock\n- **List**<**Factura**> facturas\n---\n- **void** : actualizarStock(**Factura** factura)\n- **void** : añadirProductos(**List**<**Producto**> productos)\n- **List**<**Producto**> : obtenerProductosEscasean()\n- **double** : obtenerDineroFacturado(**LocalDate** fecha)\n-  **double** : obtenerDineroFacturadoPeriodo(**LocalDate** fechaInicio, **LocalDate** fechaFin)\n- **Producto** : obtenerProductoMasRecaudacion(**LocalDate** fecha)\n- **Producto** : obtenerProductoMasRecaudacionPeriodo(**LocalDate** fechaInicio, **LocalDate** fechaFin)"}
+	],
+	"edges":[
+		{"id":"f1922159d27cbbec","fromNode":"08a03eb3658e1ad5","fromSide":"bottom","toNode":"571f05e1b7604369","toSide":"top"}
+	]
+}
