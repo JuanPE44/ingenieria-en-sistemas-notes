@@ -1,5 +1,6 @@
 ## **Tareas pendientes**
 - [ ] TP6
+- [ ] TP7
 - [ ] Teoria resumenes
 
 # **Parcial:** 03/06/2025

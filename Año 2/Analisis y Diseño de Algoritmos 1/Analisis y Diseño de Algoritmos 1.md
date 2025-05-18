@@ -1,8 +1,8 @@
 ## **Tareas pendientes**
-- [ ] (3) Divide y consquista
 - [ ] (4) Greedy
-- [x] Recursion
-- [ ] Resumenes
+- [ ] (5) Programacion dinamica
+- [ ] (6) TDA
+- [ ] Resumen C++
 
 # **Parcial:** 05/06/2025
 
@@ -120,9 +120,9 @@ Al finalizar el dictado de la Unidad 3 se espera que el alumno sea capaz de:
 	    - Sentencia while
 	    - Sentencia do-while
 	    - Sentencia for
-- Funciones
-	  - Declaración
-	  - Definición
+- [[Funciones]]
+	  - [[Año 2/Analisis y Diseño de Algoritmos 1/C++/Tipos y Variables/Declaracion|Declaracion]]
+	  - [[Definicion]]
 	  - Pasaje de parámetros
 	  - Sobrecarga de funciones
 	  - Funciones recursivas

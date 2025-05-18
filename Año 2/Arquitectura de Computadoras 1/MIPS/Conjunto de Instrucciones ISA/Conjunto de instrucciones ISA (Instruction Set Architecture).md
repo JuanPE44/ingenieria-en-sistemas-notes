@@ -81,6 +81,8 @@ La **ISA (Instruction Set Architecture)** es la interfaz entre el software y el 
 | Store Word Left        | SWL $t,I($s) | I       | 0x2A   | M( $s + I ) = $t (left part)  |
 | Store Word             | SW $t,I($s)  | I       | 0x2B   | M( $s + I ) = $t              |
 | Store Word Right       | SWR $t,I($s) | I       | 0x2E   | M( $s + I ) = $t (right part) |
+|                        |              |         |        |                               |
+|                        |              |         |        |                               |
 
 ## Acceso a la ALU
 

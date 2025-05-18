@@ -29,7 +29,7 @@ El problema de las ocho reinas consiste en colocar ocho reinas en un tablero de 
 
 **Pseudocódigo del Backtracking para el Problema de las Ocho Reinas:**
 
-```
+```cpp
 función resolverOchoReinas(tablero, fila):
     si fila == 8:
         // Se han colocado todas las reinas (solución encontrada)

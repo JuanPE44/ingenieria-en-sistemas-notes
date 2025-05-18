@@ -5,6 +5,8 @@
 - [ ] Hacer resumen Vectores
 - [ ] Hacer resumen Matrices
 - [ ] Hacer resumen Complemento ortogonal
+- [ ] Hacer resumen suma directa
+- [ ] Hacer resumen nucleo e imagen
 
 # **Parcial:** 13/06/2025
 # **Recuperatorio:** 27/06/2025
